@@ -1,0 +1,36 @@
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.env
+
+# Data (never commit real patient data)
+data/bronze/*.csv
+data/bronze/*.json
+data/silver/*.csv
+data/gold/*.csv
+!data/**/.gitkeep
+
+# dbt
+dbt/target/
+dbt/dbt_packages/
+dbt/logs/
+dbt/profiles.yml
+
+# Airflow
+airflow/logs/
+airflow/airflow.db
+airflow/airflow.cfg
+
+# IDE & OS
+.idea/
+.vscode/
+.DS_Store
+
+# Docker volumes
+postgres_data/
+
+# Forecast outputs
+forecast/output/*.csv
+!forecast/output/.gitkeep
