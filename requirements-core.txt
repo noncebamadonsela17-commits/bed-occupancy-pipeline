@@ -1,0 +1,6 @@
+# Core pipeline (Week 1) — install first
+pandas==2.2.2
+psycopg2-binary==2.9.9
+sqlalchemy==2.0.32
+pyyaml==6.0.2
+pytest==8.3.2
