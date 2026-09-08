@@ -1,0 +1,2 @@
+# dbt (Week 2) — install separately
+dbt-postgres==1.8.2
