@@ -1,0 +1,28 @@
+dataset: hospital_encounters
+version: 1.0
+author: Nonceba Mdonsela
+
+fields:
+  encounter_id:
+    type: string
+    required: true
+    unique: true
+  patient_id:
+    type: string
+    required: true
+  department:
+    type: string
+    required: true
+    allowed_values: [Emergency, ICU, General Medicine, Surgery, Maternity, Paediatrics]
+  admission_date:
+    type: date
+    required: true
+  discharge_date:
+    type: date
+    required: false
+    rule: must be >= admission_date when present
+
+quality_rules:
+  - no future admission dates
+  - occupancy_rate between 0 and 1
+  - no duplicate department/date in fact table
