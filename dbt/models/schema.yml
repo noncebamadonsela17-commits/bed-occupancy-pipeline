@@ -1,0 +1,28 @@
+version: 2
+
+sources:
+  - name: staging
+    schema: staging
+    tables:
+      - name: encounters
+
+models:
+  - name: stg_encounters
+    columns:
+      - name: encounter_id
+        tests: [unique, not_null]
+      - name: department
+        tests: [not_null]
+      - name: admission_date
+        tests: [not_null]
+
+  - name: fact_daily_occupancy
+    columns:
+      - name: date_id
+        tests: [not_null]
+      - name: department
+        tests: [not_null]
+      - name: occupancy_rate
+        tests: [not_null]
+      - name: beds_occupied
+        tests: [not_null]

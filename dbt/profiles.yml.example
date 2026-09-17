@@ -1,0 +1,12 @@
+bed_occupancy:
+  target: dev
+  outputs:
+    dev:
+      type: postgres
+      host: localhost
+      port: 5433
+      user: de_user
+      password: de_password
+      dbname: hospital_dw
+      schema: dbt
+      threads: 4
