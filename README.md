@@ -7,8 +7,7 @@ A cloud-ready data engineering pipeline that ingests hospital encounter data, ag
 
 ---
 
-## Prerequisites — install before you start
-
+## Prerequisites — install before you star
 > **Full guide:** [docs/INSTALLATION.md](docs/INSTALLATION.md)
 
 | Tool | Required? | Install command (Pop!_OS / Ubuntu) |
@@ -34,7 +33,7 @@ Python packages are installed from `requirements.txt` (pandas, Prophet, Streamli
 
 ```bash
 # 1. Go to project
-cd ~/Downloads/data\ en\ cloud\ project/bed-occupancy-pipeline
+cd ~/Music/bed-occupancy-github
 
 # 2. Start PostgreSQL (requires Docker — see INSTALLATION.md)
 docker compose up -d
@@ -107,8 +106,6 @@ Synthetic encounters (Synthea / generator)
 | Document | Description |
 |----------|-------------|
 | [docs/INSTALLATION.md](docs/INSTALLATION.md) | **What to install & how to set up** |
-| [docs/STUDY_NOTES.md](docs/STUDY_NOTES.md) | **Read this first** — pipeline flow in plain language |
-| [docs/4_WEEK_COMMIT_PLAN.md](docs/4_WEEK_COMMIT_PLAN.md) | 4-week GitHub commit and push schedule |
 | [docs/architecture.md](docs/architecture.md) | System architecture |
 | [docs/data-model.md](docs/data-model.md) | Warehouse data model |
 | [docs/runbook.md](docs/runbook.md) | How to run & troubleshoot |
@@ -143,9 +140,6 @@ occupancy_rate = beds_occupied / total_beds
 
 ---
 
-## Explaining this project
-
-Start with [docs/STUDY_NOTES.md](docs/STUDY_NOTES.md). Learn the occupancy rule and the bronze → gold flow by heart before an interview.
 
 ## License
 
